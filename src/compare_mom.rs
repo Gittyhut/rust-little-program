@@ -15,7 +15,7 @@ fn main() {
     .read_line(&mut age)
     .expect("Failed to read line.");
   
-  let age: i32 = age.trim().parse().expect("How old are you?");
+  let age: i64 = age.trim().parse().expect("How old are you?");
 
   match age.cmp(&mom_age) {
     Ordering::Less => println!("You're younger than my mom!"),
