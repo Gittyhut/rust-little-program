@@ -1,7 +1,5 @@
 use std::cmp::Ordering;
 
-use std::io;
-
 use rand::Rng;
 
 fn main() {
@@ -9,7 +7,7 @@ fn main() {
 
   let winner_number = rand::thread_rng().gen_range(1..=100);
 
-  let mut random = rand::thread_rng().gen_range(1..=300);
+  let random = rand::thread_rng().gen_range(1..=300);
   
   println!("your number is:{random}");
 
